@@ -1,6 +1,6 @@
 # AYDA ÖSD A1 Sprechen — Canlı GO Yol Haritası
 
-**Sürüm:** GO-1.3x · 11 Kasım 2026  
+**Sürüm:** GO-3 · GO-2/3 tamamlandı · 11 Kasım 2026  
 **Hedef repo:** `onurqlp/osda1sprehcen`  
 **A1 yayın yolu:** `https://onurqlp.github.io/osda1sprehcen/a1/`  
 **Bağımsız önizleme:** `https://ayda-osd-a1-15gun-onizleme.vercel.app/`  
@@ -9,8 +9,8 @@
 ## GO durumu
 
 - [x] **GO-1.3x — 18 görseli doğrula ve zenginleştir.** 18 görsel / 18 eşleşen görev, 6 yeni özgün fotoğraf, 72 dört-soru cevabı, 54 duruma uygun joker, 108 kısa diyalog repliği, A1.1 → A1.2 model anlatımlar, ayrı öğrenci/görevli rolleri, yanlış eşleşme düzeltmeleri. İlk canlı A1 sürümü ayrı `/a1/` yoluna alınır.
-- [ ] **GO-2 — Aufgabe 1–2 öğretim derinliği.** Altı resmî tanıtım konusundan dört seçim, kişisel konuşma planları, kademeli ipucu, cümle çeşitlendirme, resimde nesne/kişi/yer/eylem becerileri için etkin çalışmalar.
-- [ ] **GO-3 — Aufgabe 3 gerçek etkileşim.** Öğrenci–görevli sıra alma, duruma göre soru sorup yanıtlama, plan/alışveriş/sağlık/ulaşım farklılıkları, jokerlerin yanlış kullanılmasına karşı geri bildirim.
+- [x] **GO-2 — Aufgabe 1–2 öğretim derinliği.** Altı resmî tanıtım konusundan dört seçim, kişisel konuşma planları, kademeli ipucu, cümle çeşitlendirme, resimde nesne/kişi/yer/eylem becerileri için etkin çalışmalar.
+- [x] **GO-3 — Aufgabe 3 gerçek etkileşim.** Öğrenci–görevli sıra alma, duruma göre soru sorup yanıtlama, plan/alışveriş/sağlık/ulaşım farklılıkları, jokerlerin yanlış kullanılmasına karşı geri bildirim.
 - [ ] **GO-4 — Gerçekçi tam sözlü denemeler.** Hazırlık ve sınav zamanlaması, seçilen görseli üçüncü görevde koruma, ipuçlarını kapatma, öğretmen için resmî 25 puanlık değerlendirme ölçütleri.
 - [ ] **GO-5 — Kalite ve kullanılabilirlik.** Android/iPhone ses-telaffuz, mikrofon, 360–1440 px arayüz, erişilebilirlik, hız, resim telif ve içerik doğruluğu, öğrenci veri saklama ve erişim güvenliği kontrolü.
 - [ ] **GO-6 — Son onay ve ana yönlendirme.** Tüm testler ve öğretmen içerik kontrolü, yedek/geri dönüş, A1 navigasyonu ve eski bağlantılar, gerekirse ana sayfa yönlendirmeleri. Sonrasında baskıya uygun PDF çalışması.
@@ -40,3 +40,15 @@
 - ÖSD ZA1 resmî açıklama: https://osd.at/portfolio-item/osd-zertifikat-a1-za1/
 - ÖSD sözlü örnek kâğıdı: https://www.osd.at/wp-content/uploads/sites/7/2024/03/za1oe_ms_hp_sprechen_2024-03-26.pdf
 - ÖSD değerlendirme formu: https://www.osd.at/wp-content/uploads/2024/07/ZA1-AW_m_Ver.4.0_22_04_24-1.pdf
+
+## GO-2 + GO-3 yayın doğrulaması (11 Kasım 2026)
+
+- [x] **Aufgabe 1:** Altı konudan dört seçim, örnek cümleler, kişisel yazılı/sesli cevap, üç farklı ek soru ve kendi notlarını koruma.
+- [x] **Aufgabe 2:** Altı fotoğraf setinde 18 özgün sahne, dört soruyu tek tek ele alma, fotoğrafa özel kelime ipuçlarını açıp kapama, model cevabı sonradan gösterme ve 45–60 saniyelik yardımsız fotoğraf anlatma.
+- [x] **Aufgabe 3:** Seçilen sahnenin altı konuşma satırında sırayla görevli/öğrenci, gerçek ortama uygun sorular, takılınca örnek görme ve sesli kayıt. Süpermarkette poşet sorusunun konuşmacı ataması ayrıca düzeltildi.
+- [x] **Deneme modu:** 10 dk hazırlık + yaklaşık 10 dk sözlü; dört tanıtım konusu, üç fotoğraftan seçim, fotoğrafın sonraki bölümde korunması, kapalı yardım metinleri, öğretmenin doldurduğu 25 puanlık form.
+- [x] 18 sahne / 15 gün veri bütünlüğü, altı fotoğraf seti, üç görev, altı replikli diyalog ve puan hesaplama otomatik kod senaryosu çalıştırıldı.
+- [x] Değişiklikler yalnızca `a1/index.html` ve yeni `a1/go23.js` dosyasında tutuldu; A2 ana sayfası, yönlendirmeler ve merkezî giriş kodu değiştirilmedi.
+- [ ] **GO-4/5 için açık:** Android/iPhone gerçek cihazlarda ses/mikrofon, yetkili öğrenci hesabıyla giriş, ekran okuyucu, mobil son kullanıcı testi, performans ve sunucu taraflı erişim güvenliği.
+
+**Önemli:** Otomatik içerik ve akış testleri başarılıdır; bu ortamın tarayıcı erişim kısıtı nedeniyle gerçek tarayıcıdan uçtan uca test tamamlanamamıştır. Otomatik konuşma/telaffuz puanı verilmez. Öğrencinin kendi yazılı cevapları sadece bu cihazın tarayıcı saklama alanındadır.
